@@ -1,0 +1,6 @@
+framework module RPSDK {
+  umbrella header "RPSDK.h"
+
+  export *
+  module * { export * }
+}
