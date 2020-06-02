@@ -46,6 +46,11 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
+        repositories {
+            flatDir {
+                dirs project(':ali_real_person').file('libs')
+            }
+        }
     }
 }
 

@@ -1,8 +1,7 @@
 name: ali_real_person
-description: A new flutter plugin project.
+description: 阿里云实人认证插件
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/jaylin507/ali_real_person
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
