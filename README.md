@@ -38,14 +38,11 @@ import 'package:ali_real_person/ali_real_person.dart';
 - 将`yw_1222_*.jpg`签名图片文件导入到工程应用模块的res/drawable目录下
 - 配置`app/build.gradle`  
 ```
-   buildTypes {
-        //...
-        repositories {
-            flatDir {
-                dirs project(':ali_real_person').file('libs')
-            }
-        }
+repositories {
+    flatDir {
+        dirs project(':ali_real_person').file('libs')
     }
+}
 ```
 - 在AndroidManifest.xml中配置以下内容（若有则忽略）
 ```
