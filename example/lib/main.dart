@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: GestureDetector(
             onTap: () {
-              var token = "xxx";
+              var token = "076a14930e83459d99b3bec13c2688b8";
               AliRealPerson.startRealPerson(token, (value) {
                 //返回字符串
                 // "1" 认证成功,
