@@ -3,7 +3,7 @@
 - 在`pubspec.yaml`中加入
 ```
  dependencies:
-    ali_real_person: ^0.0.1
+    ali_real_person: ^0.0.2
 ```
 
 ##使用方法（使用前请先完成Android & IOS 配置）
@@ -73,6 +73,12 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-5.1.1-all.zip
     }
 ```
 
+- Android如果再调起实人认证拍摄页面时闪退可以尝试关闭混淆试试,可参考example/android/app/build.gradle
+```
+    minifyEnabled false
+    shrinkResources false
+```
+
 - [Android 常见问题](https://help.aliyun.com/document_detail/142591.html?spm=a2c4g.11186623.2.26.4e1a7274iikN7c#concept-2333222)
 
 ***
@@ -91,17 +97,10 @@ RPSDK.bundle
 	<string>APP需要您授权才能访问相机</string>
 ```
 
-> 以下两项每次执行完 `pod install` 都需要配置一下，否则无法运行，暂时我没找到怎么在podspec里面设置，后面如果找到再更新
+> 以下内容每次执行完 `pod install` 都需要自己手动配置一下，否则无法运行，如果路过的IOS大神知道怎么配置podspec麻烦留言告诉我一下，感谢
 
-- 修改插件Bundle 的前缀为项目Bundle 
+- 修改【插件Bundle ID的前缀】为【主工程的 Bundle ID】
+
 `org.cocoapods.ali-real-person` 修改为 `your bundle.ali-real-person`
 
-- 在`Build Settings - Other Linker Flags` 添加了 ` -ObjC`，注意大小写。
-
-
 - [IOS 集成常见问题](https://help.aliyun.com/document_detail/142592.html?spm=a2c4g.11186623.2.19.55d81ba8CmNrGP#concept-2333223)
-
-###最终效果图
-![WechatIMG119.jpeg](https://upload-images.jianshu.io/upload_images/5862096-5e34794581ed692b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![WechatIMG120.jpeg](https://upload-images.jianshu.io/upload_images/5862096-7cbd3d542babd67b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
