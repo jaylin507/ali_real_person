@@ -29,8 +29,6 @@ import 'package:ali_real_person/ali_real_person.dart';
 
 ## Android & IOS 配置
 在阿里云实人认证控制台下载SDK,本插件中的版本为最新的4.0.4。如果更新了的话自行替换依赖库即可
-![WX20200602-132227@2x.png](https://upload-images.jianshu.io/upload_images/5862096-b152fb34e2af911a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 下载后解压，会得到一个`yw_1222_*.jpg`签名文件 和 `client.zip`压缩包
 注意：Android debug包和release包在使用不同签名时不能混用同一张签名图片文件
 ***
