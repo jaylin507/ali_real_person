@@ -3,7 +3,7 @@
 - 在`pubspec.yaml`中加入
 ```
  dependencies:
-    ali_real_person: ^0.0.2
+    ali_real_person: ^0.0.3
 ```
 
 ##使用方法（使用前请先完成Android & IOS 配置）
