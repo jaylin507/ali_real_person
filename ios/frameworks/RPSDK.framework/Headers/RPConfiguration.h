@@ -52,7 +52,7 @@ NS_SWIFT_NAME(RPConfiguration)
 @property (nonatomic, assign) BOOL isMutedByDefault;
 
 /**
- 是否在主动退出时弹窗确认，默认关闭弹窗。
+ 是否在主动退出时弹窗确认，默认打开弹窗。
  */
 @property (nonatomic, assign) BOOL shouldAlertOnExit;
 

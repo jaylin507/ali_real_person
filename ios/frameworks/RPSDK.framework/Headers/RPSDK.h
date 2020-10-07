@@ -10,7 +10,7 @@
 #import <RPSDK/RPSDK+Deprecated.h>
 
 // RPSDK 版本号
-#define RPSDKVersionString @"3.3.1"
+#define RPSDKVersionString @"3.6.0"
 
 // RPSDK 发布时间
-#define RPSDKReleaseDateString @"20200527"
+#define RPSDKReleaseDateString @"20200916"

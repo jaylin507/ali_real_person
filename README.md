@@ -81,6 +81,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-5.1.1-all.zip
 
 ***
 ### IOS配置 
+- IOS 版本 3.6.0
 - 导入以下资源文件。导入时必须勾选Copy items if needed，表示自动复制一份相同的文件到工程中，并引用复制后的文件在工程目录中的位置。
 ```
 yw_1222_0769.jpg
