@@ -26,11 +26,6 @@ typedef NS_ENUM(NSInteger, RPTransitionStyle) {
      push
      */
     RPTransitionStylePush,
-
-    /**
-     popover
-     */
-    RPTransitionStylePopover,
 };
 
 /**
@@ -45,6 +40,11 @@ typedef void (^RPViewControllerHandler)(UIViewController *viewController);
  */
 NS_SWIFT_NAME(RPConfiguration)
 @interface RPConfiguration : NSObject
+
+/**
+ 自定义UI path
+ */
+@property (nonatomic, copy) NSString *customUIPath;
 
 /**
  是否默认关闭声音，默认开启声音。
@@ -86,41 +86,6 @@ NS_SWIFT_NAME(RPConfiguration)
  是否开启页面弹窗动画，默认开启动画。
  */
 @property (nonatomic, assign) BOOL isTransitionAnimationEnabled;
-
-/**
- 活体检测默认进度提示颜色，默认为灰色。
- */
-@property (nonatomic, strong, nullable) UIColor *defaultProgressColor;
-
-/**
- 活体检测中间进度提示颜色，默认为蓝色。
- */
-@property (nonatomic, strong, nullable) UIColor *intermediateProgressColor;
-
-/**
- 活体检测成功进度提示颜色，默认为绿色。
- */
-@property (nonatomic, strong, nullable) UIColor *successfulProgressColor;
-
-/**
- 关闭图标。
- */
-@property (nonatomic, strong, nullable) UIImage *exitIcon;
-
-/**
- 声音开启图标。
- */
-@property (nonatomic, strong, nullable) UIImage *soundOnIcon;
-
-/**
- 声音关闭图标。
- */
-@property (nonatomic, strong, nullable) UIImage *soundOffIcon;
-
-/**
- 确认按钮图标。
- */
-@property (nonatomic, strong, nullable) UIImage *confirmButtonIcon;
 
 /**
  实人认证默认配置
