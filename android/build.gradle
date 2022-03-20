@@ -43,8 +43,15 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation (name:'rpsdk-4.0.4', ext:'aar')
-    implementation (name:'oss-android-sdk-2.9.2', ext:'aar')
-    implementation (name:'SecurityGuardSDK-external-release-5.4.193-preInstall', ext:'aar')
-    implementation (name:'SecurityBodySDK-external-release-5.4.112-preInstall', ext:'aar')
+    
+    implementation 'com.alibaba:fastjson:1.2.62'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation 'com.squareup.okio:okio:1.16.0'
+
+    implementation (name:'rpsdk-4.6.2-open', ext:'aar')
+    implementation (name:'oss-android-sdk-2.9.2', ext: 'aar')
+    implementation (name:'SecurityBodySDK-external-release-5.5.19', ext:'aar')
+    implementation (name:'SecurityGuardSDK-external-release-5.5.13873794', ext:'aar')
+    implementation (name:'MiddleTierSDK-external-release-5.5.13874142', ext:'aar')
+    implementation (name:'windvane', ext:'aar')
 }
